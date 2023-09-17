@@ -93,6 +93,7 @@ function runApp() {
 
     console.log('question', question);
     let input = document.querySelector('.input-search').value;
+    input = String(input).toLowerCase();
     console.log('input', input);
 
     if (countWrong > 3) {
