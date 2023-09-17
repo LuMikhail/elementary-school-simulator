@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>words API</title>
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="fon-words">
+    <aside>
+        <input type="checkbox" id="menu-toggle" />
+        <label id="trigger" for="menu-toggle"></label>
+        <label id="burger" for="menu-toggle"></label>
+        <ul id="menu">
+            <li class="menu__checkbox"><a href="./index.html">Слова</a></li>
+            <li class="menu__checkbox"><a href="./number.html">Цифры</a></li>
+        </ul>
+    </aside>
+    <main class="learn-word">
+        <div class="box">
+            <h1 class="header animate__animated animate__backInDown animate__slower ">Учим английские слова.</h1>
+            <section class="question">
+            </section>
+            <section class="test">
+                <div class="out"></div>
+                <input class="input-search" type="text">
+                <button class="search">Проверим</button>
+                <div class="wrongs"></div>
+                <button class="list-wrong" hidden="true">Мои ошибки</button>
+            </section>
+        </div>
+        <section class="gallery"></section>
+
+    </main>
+    </div>
+    <!-- Важно! чтобы script был в конце документа -->
+    <script type="module" src="index.js"></script>
+</body>
+
+
+</html>
